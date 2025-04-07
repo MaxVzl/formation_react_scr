@@ -61,6 +61,5 @@ const removePassword = (obj) => {
     const {password, ...rest} = obj;
     return rest;
 };
-console.log(removePassword({name: "toto", password: "1234"}))
 
 module.exports = {extractFirstTwo, extractRest, extractName, removePassword}
