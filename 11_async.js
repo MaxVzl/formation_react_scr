@@ -12,7 +12,9 @@
  * 
  */
 const usingThen = (cb) => {
+    new Promise((resolve) => setTimeout(resolve, 2000)).then((value) => cb());
 }
+// usingThen(() => console.log('ok ok ok'));
 
 /**
  * Créez une fonction asynchrone qui attend 2 seconde puis execute le callback passé en paramètre
@@ -26,7 +28,7 @@ const usingThen = (cb) => {
  */
 
 const usingAwait = (cb) => {
-
+    
 }
 
 /**
